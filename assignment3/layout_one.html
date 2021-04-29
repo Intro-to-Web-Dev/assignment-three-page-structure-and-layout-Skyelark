@@ -8,8 +8,9 @@
         <meta name="keywords" content="Assignment 3, site strategy, layout">
         <meta name="author" content="Z. McCloud">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cormorant+Upright:wght@300;400;500&display=swap" rel="stylesheet">
             <style>
-/*Questions 1-3: I chose this color pallet because it is comforting, inviting and reasurring. It is complementary and fits the mood that I am trying to portray. For the header and footer, I will use #71ABAF (teal.) For the page heading (H1), I will use #D87C2E (orange.) For the item names (H2) I will use #2D6952 (green.) For the body copy, I will use #414B4A (grey.) For header and footer text, I will use #FFFFFF (white.)*/
              * {
                 margin:0;
                 padding:0;
@@ -19,74 +20,21 @@
                 vertical-align:baseline;
                 background:transparent;
                 }
-                #grid_container{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    grid-template-rows: auto auto auto auto auto;
-                    grid-template-areas: "head head head head" 
-                                        "open open open open"
-                                        "main main main main" 
-                                        "main main main main" 
-                                        "foot foot foot foot";
-                    width: 75%;
-                    height: 100vh;
-                    margin: auto;
-                }
-                #headstruct{
-                border: 2px solid green;
-                background-color: #71ABAF;
-                height: 120px;
-                width: 100%;
-                grid-area: head;
-                }
-                #main_area{
-                display: flex;
-                flex-wrap: wrap;
-                border: 2px solid red;
-                grid-area: main;
-                }
-                .boxes{
-                border: 2px solid black;
-                flex: 1 0 400px;
-                height: 550px;
-                margin: 2.5%;
-                text-align: center;
-                }
-                .opening{
-                border: 2px solid black;
-                margin-left: 25%;
-                margin-right: 25%;
-                margin-top: 2.5%;
-                margin-bottom:2.5%;
-                grid-area: open;
-                width: 100%;
-                text-align: center;
-                }
-                #footer{
-                    border: 2px solid blue;
-                    background-color: #71ABAF;
-                    height: 150px;
-                    width: 100%;
-                    grid-area: foot;
-                }
-                #logo{
-                    vertical-align: bottom;
-                }
             </style>
             <link rel="stylesheet" href="style.css">
 	</head>
 	<body>
         <div id="grid_container">
-            <header id="headstruct"><h1 id="logo">Comfort Soup Recipes</h1>
+            <header id="headstruct"><h4 id="logo">Comfort Soup Recipes</h4>
             </header>
                 <main id="main_area">
                     <div class="opening"><h1>Soups</h1>
-                                        <h2>Whether you’re looking for warmth from the chilly weather or just looking for your next family dinner,  we’ve got a recipe for you. Cozy up with a bowl, just the way Mom used to make it!</h2>
+                                        <p>Whether you’re looking for warmth from the chilly weather or just looking for your next family dinner,  we’ve got a recipe for you. Cozy up with a bowl, just the way Mom used to make it!</p>
                     </div>
-                    <div class="boxes"><h1>Soup 1</h1></div>
-                    <div class="boxes"><h1>Soup 2</h1></div>
-                    <div class="boxes"><h1>Soup 3</h1></div>
-                    <div class="boxes"><h1>Soup 4</h1></div>
+                    <div class="boxes"><h2>Soup 1</h2></div>
+                    <div class="boxes"><h2>Soup 2</h2></div>
+                    <div class="boxes"><h2>Soup 3</h2></div>
+                    <div class="boxes"><h2>Soup 4</h2></div>
                 </main>
             <footer id="footer">
             </footer>   

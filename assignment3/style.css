@@ -1,3 +1,116 @@
-<!--Questions 1-3-->
-body {
+/*Requirement 2- Questions 1-3: I chose this color pallet because it is comforting, inviting and reasurring. It is complementary and fits the mood that I am trying to portray. For the header and footer, I will use #71ABAF (teal.) For the page heading (H1), I will use #D87C2E (orange.) For the item names (H2) I will use #2D6952 (green.) For the body copy, I will use #414B4A (grey.) For header and footer text, I will use #FFFFFF (white.)*/
+/*Requirement 3- Questions 1-3: For my larger display type (h1, h2), I want to use Cabin Sketch in regular (XL) for the items and bold (XXL) for the page title. For the body copy (<body>,<p>) I want to use Cormorant Garamond in light and regular (L). I want to use normal letter spacing and word spacing, and 20-25px line-height.*/
+#grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "head head head head" 
+                        "open open open open"
+                        "main main main main" 
+                        "main main main main" 
+                        "foot foot foot foot";
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+}
+#soup_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "head head head head" 
+                        "pic pic pic pic"
+                        "description description description description" 
+                        "ingredients ingredients ingredients ingredients"
+                        "instructions instructions instructions instructions" 
+                        "foot foot foot foot";
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+}
+#headstruct{
+border: 2px solid green;
+background-color: #71ABAF;
+height: 120px;
+width: 100%;
+grid-area: head;
+}
+#main_area{
+display: flex;
+flex-wrap: wrap;
+border: 2px solid red;
+grid-area: main;
+}
+.boxes{
+border: 2px solid black;
+flex: 1 0 400px;
+height: 550px;
+margin: 2.5%;
+text-align: center;
+}
+.opening{
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 2.5%;
+margin-bottom:2.5%;
+grid-area: open;
+width: 100%;
+text-align: center;
+}
+.pic{
+max-width: 600px;
+max-height: 400px;
+}
+.description{
+margin: 2.5%;
+border: 2px solid black;
+}
+.ingredients{
+margin: 2.5%;
+border: 2px solid black;    
+}
+.instructions{
+margin: 2.5%;
+border: 2px solid black;
+}
+#footer{
+    border: 2px solid blue;
+    background-color: #71ABAF;
+    height: 150px;
+    width: 100%;
+    grid-area: foot;
+}
+#logo{
+    vertical-align: bottom;
+}
+/*will use for page title*/
+h1{
+    color: #D87C2E;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: xx-large;
+}
+/*will use for item (soup) title*/
+h2{
+    color: #2D6952;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: x-large;
+    text-align: center;
+}
+/*using as a temporary stand-in for logo*/
+h4{
+    color: white;
+    font-size: xx-large;
+}
+/*will use as an alternate to body copy for greeting paragraph and in recipes*/
+p{
+    color: #414B4A;
+    font-family: 'Cormorant Upright', serif;
+    font-size: large;
+    line-height: 20px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+/*will use for most body copy*/
+body{
+    color: #414B4A;
+    font-family: 'Cormorant Upright', serif;
 }
