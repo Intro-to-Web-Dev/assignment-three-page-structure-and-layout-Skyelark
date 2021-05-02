@@ -56,21 +56,32 @@ grid-area: open;
 width: 100%;
 text-align: center;
 }
-.pic{
+#pic{
+text-align: center;
+grid-area: pic;
+}
+.picture{
 max-width: 600px;
 max-height: 400px;
+margin:auto;
 }
-.description{
+#description{
 margin: 2.5%;
 border: 2px solid black;
+text-align: center;
+grid-area: description;
 }
-.ingredients{
-margin: 2.5%;
-border: 2px solid black;    
-}
-.instructions{
+#ingredients{
 margin: 2.5%;
 border: 2px solid black;
+text-align: center;
+grid-area: ingredients;   
+}
+#instructions{
+margin: 2.5%;
+border: 2px solid black;
+text-align: center;
+grid-area: instructions;
 }
 #footer{
     border: 2px solid blue;
